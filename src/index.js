@@ -22,6 +22,7 @@ app.get('/verify-cookie', (req, res) => {
         return;
     }
 
+    res.status('401');
     res.send('No cookies for you :(');
 });
 
