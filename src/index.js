@@ -15,4 +15,14 @@ app.get('/set-cookie', (req, res) => {
     res.send('Cookie Set!');
 });
 
+app.get('/verify-cookie', (req, res) => {
+    const cookie = req.cookies['ioscookietest'];
+    if (cookie) {
+        res.send('You have a cookie 🍪');
+        return;
+    }
+
+    res.send('No cookies for you :(');
+});
+
 app.listen(port, () => console.log('App listening at http://localhost:3000'))
