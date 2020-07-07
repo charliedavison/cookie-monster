@@ -4,4 +4,4 @@
 
 `node /src/index.js`
 
-Call http://localhost:3000/set-cookie to get a cookie
+Call http://localhost:3000/set-cookie to get a cookie 🍪 
